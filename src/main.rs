@@ -1,9 +1,18 @@
-const SECONDS_IN_MINUTE: u32 = 60;
 fn main() {
-    const MINUTES_IN_HOUR: u32 = 60;
-    const SECONDS_IN_HOUR: u32 = SECONDS_IN_MINUTE * MINUTES_IN_HOUR;
+    let x = 5;
+    let y = 2_113_199_456;
+    let h = 0xff;
+    let o = 0o77;
+    let b = 0b1111_0000;
+    let byte = b'A';
 
-    let total = 30;
-    let total_em_segundos = total * SECONDS_IN_HOUR;
-    println!("Trabalhou {} segundos!", total_em_segundos);
+    let z = 42.1;
+    let verdadeiro = true;
+    let falso = false;
+
+    let char = 'A';
+    let char2 = '😁';
+
+    let tuplinha = (x, y, z, char2);
+    println!("{:?}", tuplinha)
 }
