@@ -5,10 +5,11 @@ fn convert_to_int(data_input: &String) -> i32 {
     return x;
 }
 
-fn main() {
+fn somar_digitos() {
     let mut soma = 0;
     let mut valor_entrada = String::new();
 
+    println!("Digite um número:");
     io::stdin()
         .read_line(&mut valor_entrada)
         .expect("Não foi possível ler a entrada");
@@ -24,4 +25,8 @@ fn main() {
     }
 
     println!("A soma é {}", soma);
+}
+
+fn main() {
+    somar_digitos();
 }
