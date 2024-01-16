@@ -27,7 +27,7 @@ fn somar_digitos() {
     println!("A soma é {}", soma);
 }
 
-fn calculo_fatorial() {
+fn calcular_fatorial() {
     let mut fatorial = 1;
     let mut entrada_fatorial = String::new();
 
@@ -44,6 +44,21 @@ fn calculo_fatorial() {
     println!("O fatorial desse número é {}", fatorial);
 }
 
+fn verificar_alunos_recuperacao() {
+    const NOTA_LIMITE: f64 = 7.0;
+    let medias_alunos = [8.5, 3.4, 5.6, 8.9];
+
+    let mut i = 0;
+    while i < medias_alunos.len() {
+        if medias_alunos[i] >= NOTA_LIMITE {
+            println!("{} está aprovado", medias_alunos[i])
+        } else {
+            println!("{} está reprovado", medias_alunos[i])
+        }
+        i += 1;
+    }
+}
+
 fn main() {
-    calculo_fatorial();
+    verificar_alunos_recuperacao();
 }
