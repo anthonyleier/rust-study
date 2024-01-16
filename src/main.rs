@@ -45,18 +45,28 @@ fn calcular_fatorial() {
 }
 
 fn verificar_alunos_recuperacao() {
-    const NOTA_LIMITE: f64 = 7.0;
-    let medias_alunos = [8.5, 3.4, 5.6, 8.9];
-
+    let mut qtd_alunos = 0;
+    let mut qtd_medias = String::new();
     let mut i = 0;
-    while i < medias_alunos.len() {
-        if medias_alunos[i] >= NOTA_LIMITE {
-            println!("{} está aprovado", medias_alunos[i])
-        } else {
-            println!("{} está reprovado", medias_alunos[i])
+
+    println!("Quantos alunos são?");
+    io::stdin().read_line(&mut qtd_medias).expect("Erro ao ler médias");
+
+    while i < convert_to_int(&qtd_medias) {
+
+        let mut media_aluno = String::new();
+        println!("Qual a média desse aluno?");
+        io::stdin().read_line(&mut media_aluno).expect("Erro ao ler médias");
+
+
+        if convert_to_int(&media_aluno) >= 3 && convert_to_int(&media_aluno) < 6 {
+            qtd_alunos += 1;
         }
+
         i += 1;
     }
+
+    println!("Quantidade de alunos: {}", qtd_alunos);
 }
 
 fn main() {
