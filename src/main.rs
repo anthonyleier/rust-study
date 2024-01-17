@@ -90,14 +90,10 @@ fn encontrar_maior_numero(a: i32, b: i32) -> i32 {
 }
 
 fn encontrar_maior_divisor_comum(mut a: i32, mut b: i32) -> i32 {
-    let mut temp = 0;
     while b != 0 {
-        temp = b;
-        println!("temp: {}", temp);
+        let temp = b;
         b = a % b;
-        println!("b: {}", b);
         a = temp;
-        println!("a: {}", a);
     }
     return a;
 }
@@ -106,6 +102,6 @@ fn main() {
     let menor_divisor = encontrar_menor_divisor_comum(15, 20);
     println!("O menor divisor é {}", menor_divisor);
 
-    let maior_divisor = encontrar_maior_divisor_comum(100, 20);
+    let maior_divisor = encontrar_maior_divisor_comum(15, 35);
     println!("O maior divisor é {}", maior_divisor);
 }
