@@ -50,14 +50,16 @@ fn verificar_alunos_recuperacao() {
     let mut i = 0;
 
     println!("Quantos alunos são?");
-    io::stdin().read_line(&mut qtd_medias).expect("Erro ao ler médias");
+    io::stdin()
+        .read_line(&mut qtd_medias)
+        .expect("Erro ao ler médias");
 
     while i < convert_to_int(&qtd_medias) {
-
         let mut media_aluno = String::new();
         println!("Qual a média desse aluno?");
-        io::stdin().read_line(&mut media_aluno).expect("Erro ao ler médias");
-
+        io::stdin()
+            .read_line(&mut media_aluno)
+            .expect("Erro ao ler médias");
 
         if convert_to_int(&media_aluno) >= 3 && convert_to_int(&media_aluno) < 6 {
             qtd_alunos += 1;
@@ -69,6 +71,41 @@ fn verificar_alunos_recuperacao() {
     println!("Quantidade de alunos: {}", qtd_alunos);
 }
 
+fn encontrar_menor_divisor_comum(a: i32, b: i32) -> i32 {
+    let mut i = 2;
+    loop {
+        if a % i == 0 && b % i == 0 {
+            return i;
+        }
+        i += 1;
+    }
+}
+
+fn encontrar_maior_numero(a: i32, b: i32) -> i32 {
+    if a > b {
+        return a;
+    } else {
+        return b;
+    }
+}
+
+fn encontrar_maior_divisor_comum(mut a: i32, mut b: i32) -> i32 {
+    let mut temp = 0;
+    while b != 0 {
+        temp = b;
+        println!("temp: {}", temp);
+        b = a % b;
+        println!("b: {}", b);
+        a = temp;
+        println!("a: {}", a);
+    }
+    return a;
+}
+
 fn main() {
-    verificar_alunos_recuperacao();
+    let menor_divisor = encontrar_menor_divisor_comum(15, 20);
+    println!("O menor divisor é {}", menor_divisor);
+
+    let maior_divisor = encontrar_maior_divisor_comum(100, 20);
+    println!("O maior divisor é {}", maior_divisor);
 }
