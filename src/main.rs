@@ -99,20 +99,34 @@ fn encontrar_maior_divisor_comum(mut a: i32, mut b: i32) -> i32 {
 }
 
 fn calcular_dobro(numero: i32) -> i32 {
-    return numero * 2
+    return numero * 2;
 }
 
-fn multiplicar(a: f64, b:f64) -> f64 {
+fn multiplicar(a: f64, b: f64) -> f64 {
     a * b
 }
 
-fn retornar_numero() -> f64{
+fn retornar_numero() -> f64 {
     let mut numero = 10 as f64;
     numero = 20f64;
     numero
 }
 
+fn percorrer() {
+    // let range = 1..10;
+    for i in 1..10 {
+        println!("O indice é {}", i)
+    }
+}
+
+fn percorrer_vetor() {
+    let animais = vec!["Coelho", "Cachorro", "Gato", "Vaca"];
+    // let range = 1..10;
+    for a in animais {
+        println!("O animal é {}", a)
+    }
+}
+
 fn main() {
-    let resultado = retornar_numero();
-    println!("O número é {}", resultado)
+    percorrer_vetor();
 }
