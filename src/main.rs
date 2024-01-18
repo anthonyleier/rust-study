@@ -1,6 +1,7 @@
-mod tarefa1;
+mod tarefa2;
 
 fn main() {
-    tarefa1::count(10);
-    tarefa1::count_down(10);
+    let vetor = [34, 48, 96, 38, 23];
+    let maior_valor = tarefa2::maior_valor_vetor_array(&vetor);
+    println!("{}", maior_valor);
 }

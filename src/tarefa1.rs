@@ -1,3 +1,5 @@
+// Esta tarefa requer que o candidato crie um programa em Rust que use funções, while e for loops para contar de 1 a 10
+
 pub fn count(num: i32) {
     for i in 1..=num {
         println!("O número atual é {}", i);
