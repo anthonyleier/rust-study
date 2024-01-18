@@ -106,7 +106,13 @@ fn multiplicar(a: f64, b:f64) -> f64 {
     a * b
 }
 
+fn retornar_numero() -> f64{
+    let mut numero = 10 as f64;
+    numero = 20f64;
+    numero
+}
+
 fn main() {
-    let resultado = multiplicar(10.5, 20.3);
-    println!("O resultado é {}", resultado);
+    let resultado = retornar_numero();
+    println!("O número é {}", resultado)
 }
