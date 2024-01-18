@@ -98,10 +98,11 @@ fn encontrar_maior_divisor_comum(mut a: i32, mut b: i32) -> i32 {
     return a;
 }
 
-fn main() {
-    let menor_divisor = encontrar_menor_divisor_comum(15, 20);
-    println!("O menor divisor é {}", menor_divisor);
+fn calcular_dobro(numero: i32) -> i32 {
+    return numero * 2
+}
 
-    let maior_divisor = encontrar_maior_divisor_comum(15, 35);
-    println!("O maior divisor é {}", maior_divisor);
+fn main() {
+    let dobro = calcular_dobro(2);
+    println!("O dobro é {}", dobro);
 }
