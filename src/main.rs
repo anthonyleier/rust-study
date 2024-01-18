@@ -102,7 +102,11 @@ fn calcular_dobro(numero: i32) -> i32 {
     return numero * 2
 }
 
+fn multiplicar(a: f64, b:f64) -> f64 {
+    a * b
+}
+
 fn main() {
-    let dobro = calcular_dobro(2);
-    println!("O dobro é {}", dobro);
+    let resultado = multiplicar(10.5, 20.3);
+    println!("O resultado é {}", resultado);
 }
