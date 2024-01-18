@@ -1,8 +1,6 @@
-mod intro;
-
-use intro::somar_digitos;
-
+mod tarefa1;
 
 fn main() {
-    somar_digitos();
+    tarefa1::count(10);
+    tarefa1::count_down(10);
 }
