@@ -1,7 +1,7 @@
-mod tarefa6;
+mod tarefa7;
 
 fn main() {
-    let vetor = [1, 1, 1, 1, 1, 1];
-    let resultado = tarefa6::calcular_media(&vetor);
+    let texto: &str = "luiz";
+    let resultado = tarefa7::verificar_caracteres_unicos(&texto);
     println!("{}", resultado);
 }
