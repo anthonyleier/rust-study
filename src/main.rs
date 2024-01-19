@@ -1,5 +1,7 @@
-mod tarefa5;
+mod tarefa6;
 
 fn main() {
-    tarefa5::soma_pares();
+    let vetor = [1, 1, 1, 1, 1, 1];
+    let resultado = tarefa6::calcular_media(&vetor);
+    println!("{}", resultado);
 }
