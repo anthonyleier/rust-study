@@ -1,6 +1,5 @@
-mod tarefa3;
+mod tarefa4;
 
 fn main() {
-    let resultado = tarefa3::verificar_numero_primo(1);
-    println!("{}", resultado);
+    tarefa4::tabuada(8);
 }
