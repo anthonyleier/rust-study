@@ -1,8 +1,8 @@
-mod tarefa8;
+mod tarefa9;
 
 fn main() {
-    let texto1: &str = "abc";
-    let texto2: &str = "bca";
-    let resultado = tarefa8::e_permutacao(&texto1, &texto2);
+    let texto1: &str = "josiani";
+    let texto2: &str = "joseani";
+    let resultado = tarefa9::edicao_strings(&texto1, &texto2);
     println!("{}", resultado);
 }
