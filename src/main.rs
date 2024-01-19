@@ -1,5 +1,5 @@
-mod tarefa4;
+mod tarefa5;
 
 fn main() {
-    tarefa4::tabuada(8);
+    tarefa5::soma_pares();
 }
