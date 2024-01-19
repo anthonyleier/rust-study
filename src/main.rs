@@ -1,8 +1,13 @@
-mod tarefa9;
+mod tarefa10;
 
 fn main() {
-    let texto1: &str = "josiani";
-    let texto2: &str = "joseani";
-    let resultado = tarefa9::edicao_strings(&texto1, &texto2);
-    println!("{}", resultado);
+    let original_str = "aabcccccaaa";
+    let compressed_str = tarefa10::compress_string(original_str);
+    println!("Original: {}", original_str);
+    println!("Compressed: {}", compressed_str);
+
+    let other_str = "abcdefgh";
+    let compressed_other = tarefa10::compress_string(other_str);
+    println!("Original: {}", other_str);
+    println!("Compressed: {}", compressed_other);
 }
