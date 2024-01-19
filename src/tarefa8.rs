@@ -24,5 +24,6 @@ pub fn e_permutacao(str1: &str, str2: &str) -> bool {
         }
     }
 
+    // return true
     return contador_caracteres.values().all(|&contador| contador == 0);
 }
