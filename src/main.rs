@@ -1,7 +1,8 @@
-mod tarefa7;
+mod tarefa8;
 
 fn main() {
-    let texto: &str = "luiz";
-    let resultado = tarefa7::verificar_caracteres_unicos(&texto);
+    let texto1: &str = "abc";
+    let texto2: &str = "bca";
+    let resultado = tarefa8::e_permutacao(&texto1, &texto2);
     println!("{}", resultado);
 }
