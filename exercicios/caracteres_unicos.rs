@@ -14,3 +14,13 @@ pub fn verificar_caracteres_unicos(texto: &str) -> bool {
     }
     return true;
 }
+
+fn main() {
+    let entrada1 = "abcdefghijk";
+    let saida1 = verificar_caracteres_unicos(entrada1);
+    println!("{} -> {}", entrada1, saida1);
+
+    let entrada2 = "abcabcabc";
+    let saida2 = verificar_caracteres_unicos(entrada2);
+    println!("{} -> {}", entrada2, saida2);
+}
