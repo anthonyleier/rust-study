@@ -1,4 +1,4 @@
-// Crie um programa em Rust que leia uma sequência de números reais e exiba a soma dos números pares
+// Faça uma função que leia uma sequência de números reais e exiba a soma dos números pares
 
 use std::io;
 
@@ -33,4 +33,8 @@ pub fn soma_pares() {
     }
 
     println!("A soma dos pares é {}", soma);
+}
+
+fn main() {
+    soma_pares();
 }

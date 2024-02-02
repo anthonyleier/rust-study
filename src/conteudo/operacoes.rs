@@ -124,3 +124,7 @@ pub fn percorrer_vetor() {
         println!("O animal é {}", a)
     }
 }
+
+fn main(){
+    percorrer_vetor();
+}

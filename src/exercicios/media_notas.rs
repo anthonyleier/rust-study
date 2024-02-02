@@ -11,3 +11,9 @@ pub fn calcular_media(vetor: &[i32]) -> f64 {
 
     return media;
 }
+
+fn main(){
+    let vetor = [5, 3, 10, 9, 4];
+    let media = calcular_media(&vetor);
+    println!("Vetor: {:?} - Média: {}", vetor, media)
+}

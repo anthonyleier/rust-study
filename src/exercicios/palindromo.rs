@@ -10,3 +10,13 @@ pub fn palindromo(entrada: i32) -> bool {
 
     return entrada_string == entrada_invertida;
 }
+
+fn main() {
+    let entrada1 = 123456;
+    let resultado1 = palindromo(entrada1);
+    println!("{} -> {}", entrada1, resultado1);
+
+    let entrada2 = 123321;
+    let resultado2 = palindromo(entrada2);
+    println!("{} -> {}", entrada2, resultado2);
+}

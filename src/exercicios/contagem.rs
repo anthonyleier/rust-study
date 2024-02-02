@@ -1,4 +1,4 @@
-// Esta tarefa requer que o candidato crie um programa em Rust que use funções, while e for loops para contar de 1 a 10
+// Faça funções, while e for loops para contar de 1 a 10 de forma crescente e decrescente
 
 pub fn count(num: i32) {
     for i in 1..=num {
@@ -12,4 +12,9 @@ pub fn count_down(num: i32) {
         println!("O número atual é {}", i);
         i -= 1;
     }
+}
+
+fn main() {
+    count(10);
+    count_down(20);
 }
